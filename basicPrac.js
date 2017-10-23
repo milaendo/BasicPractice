@@ -17,7 +17,6 @@ countVowels('The quick brown fox')
 
 ///////////////////////////////////////////////////////////////
 
-// [11:45] 
 // Write a JavaScript function that reverses a number.
 // Example x = 32243;
 // Expected Output : 34223
@@ -85,3 +84,44 @@ for (let myPlacesIndex = 0; myPlacesIndex < myPlaces.length; myPlacesIndex++){
    }
   }
 }
+
+///////////////////////////////////////////////////////////////
+
+let fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+// Iterate over fruits below
+fruits.forEach(fruit => console.log("I want to eat "+ fruit))
+
+///////////////////////////////////////////////////////////////
+
+let animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+
+// Create the secretMessage array below
+//let secretMessage= animals.map(function(animals){
+ // return animals[0]
+//})
+let secretMessage = animals.map(animals => console.log(animals[0]))
+
+console.log(secretMessage.join(''));
+
+let bigNumbers = [100, 200, 300, 400, 500];
+
+// Create the smallNumbers array below
+let smallNumbers = bigNumbers.map(bigNumbers =>bigNumbers / 100)
+
+///////////////////////////////////////////////////////////////
+
+let randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+// Call .filter() on randomNumbers below
+let smallNumbers = randomNumbers.filter(num => num < 250 )
+
+let favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+//let longFavoriteWords = favoriteWords.filter(function(word) {
+  //return word.length > 7;
+//});
+
+// Refactor the code above using arrow function syntax
+
+let longFavoriteWords = favoriteWords.filter(word => word.length > 7)
