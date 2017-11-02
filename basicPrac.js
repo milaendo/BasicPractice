@@ -28,8 +28,6 @@ countVowels('The quick brown fox')
 
 
 
-
-
 function isGreaterThan( numberOne, numberTwo ){
   if (numberOne > numberTwo){
     return true;
@@ -125,3 +123,6 @@ let favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
 // Refactor the code above using arrow function syntax
 
 let longFavoriteWords = favoriteWords.filter(word => word.length > 7)
+
+///////////////////////////////////////////////////////////////
+
