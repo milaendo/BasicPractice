@@ -126,3 +126,74 @@ let longFavoriteWords = favoriteWords.filter(word => word.length > 7)
 
 ///////////////////////////////////////////////////////////////
 
+let words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+
+// Something is missing in the method call below
+
+console.log(words.some(function(word) {
+  return word.length < 6;
+}));
+
+// Use filter to create a new array
+
+let interestingWords = words.filter(function(word){
+  return word.length > 5
+});
+
+// Make sure to uncomment the code below and fix the incorrect code before running it
+
+console.log(interestingWords.every(word => word.length > 5 ));
+
+///////////////////////////////////////////////////////////////
+
+let day = 'Thursday'
+let alarm;
+let person = {
+  name: 'Mila',
+  age: 27,
+  weekendAlarm:'No alarms needed',
+  weekAlarm:'Alarm set to 7am',
+  sayHello: () => {
+    return 'Hello, there!'
+  }
+}
+
+person.hobbies=['coding']
+
+if ( day === 'Saturday' || day === 'Sunday'){
+  alarm = 'weekendAlarm';
+}
+else {
+  alarm = 'weekAlarm'
+}
+
+console.log(person['name'])
+console.log(person['age'])
+console.log(person[alarm])
+console.log(person.hobbies)
+console.log(person.sayHello())
+
+///////////////////////////////////////////////////////////////
+
+let person = {
+  _name: 'Lu Xun',
+  _age: 137,
+
+  set age(newAge){
+  	if(typeof newAge === 'number') {
+      this._age = newAge;
+    }
+    else {
+      return 'Invalid input'
+    }
+	},
+  
+  get age(){
+  console.log(`${this._name} is ${this._age} years old.`);
+	return this._age;
+}
+};
+
+person.age = 'Thirty-nine';
+person.age = 39
+console.log(person.age)
